@@ -28,14 +28,18 @@ int main()
   delete fireball;
 
   ATarget* wall = tarGen.createTarget("Inconspicuous Red-brick Wall");
-std::cout <<   wall.getType() << std::endl;
+ 
+  if (wall == NULL)
+   // std::cout << "Fuck you"<< std::endl;
+  
+  std::cout << wall->getType() << std::endl;
 
   richard.introduce();
 
   richard.launchSpell("Polymorph", *wall);
- /*
+ 
   richard.launchSpell("Fireball", *wall);
-*/
+
 }
 
 

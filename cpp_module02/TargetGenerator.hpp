@@ -20,9 +20,9 @@ class TargetGenerator
 		TargetGenerator ();
 		virtual ~TargetGenerator();
 
-		void learnTargetType (const ATarget *target);
+		void learnTargetType (ATarget *target);
 		void forgetTargetType (const std::string &targetType);
-		ATarget *createTarget (const std::string &targetType);
+		ATarget *createTarget (std::string const &targetType);
 };
 
 #endif
