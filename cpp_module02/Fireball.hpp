@@ -6,8 +6,8 @@
 class Fireball : public ASpell
 {
 	public:
-		Fireball() : ASpell("Fireball", "burnt to a crisp") {}
-		virtual ~Fireball() {}
+		Fireball();
+		virtual ~Fireball();
 		
 		virtual ASpell *clone() const;
 };

@@ -29,7 +29,7 @@ class Warlock
 		
 		void introduce() const;
 		
-		void learnSpell (const ASpell *spell);
+		void learnSpell (ASpell *spell);
 		void forgetSpell (const std::string spellName);
 		void launchSpell (const std::string spellName, const ATarget &Target);
 };

@@ -33,10 +33,10 @@ void Warlock::setTitle(const std::string &Title)
 		
 void Warlock::introduce() const
 {
-	std::cout << this->_name << ": I am" << this->_name << ", " << this->_title << "!" << std::endl;	
+	std::cout << this->_name << ": I am " << this->_name << ", " << this->_title << "!" << std::endl;	
 }
 
-void Warlock::learnSpell (const ASpell *spell)
+void Warlock::learnSpell (ASpell *spell)
 {
 	if (spell)
 	{

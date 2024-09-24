@@ -6,8 +6,8 @@
 class BrickWall : public ATarget
 {
 	public:
-		BrickWall() : ATarget("Target Practice BrickWall") {}
-		virtual ~BrickWall() {}
+		BrickWall();
+		virtual ~BrickWall();
 		
 		virtual ATarget *clone() const;
 };
